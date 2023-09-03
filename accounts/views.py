@@ -16,7 +16,7 @@ def register(request):
             print(form.cleaned_data)
             user = form.save()
             login(request, user)
-            return redirect('home')
+            return redirect('dashboard')
     return render(request, 'accounts/register.html', {'form':form})
 
 def user_login(request):
