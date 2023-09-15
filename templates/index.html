@@ -66,6 +66,7 @@
       </div>
     </div>
     <div class="row event_box">
+      {% if course_list %}
       {% for item in course_list %}
       <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-12 design">
         <div class="events_item ">
@@ -87,6 +88,14 @@
         </div>
       </div>
       {% endfor %}
+      {% else %}
+      <div>
+        <div class="container " style="margin-bottom: auto;">
+
+          <h4 class="text-danger">There are currently no courses !!!!</h4>
+        </div>
+      </div>
+      {% endif %}
     </div>
   </div>
 </section>

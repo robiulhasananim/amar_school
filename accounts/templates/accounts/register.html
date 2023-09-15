@@ -9,6 +9,7 @@
           <div class="contact-us-content text-white">
             <form method="post" >
                 {% csrf_token %}
+                <h2 class='text-white text-center mt-3'>Teacher Registration</h2>
                 {{form |crispy}}
                 <button class="btn btn-info text-white" type="submit">Submit</button>
             </form>
